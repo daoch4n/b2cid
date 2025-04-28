@@ -1,0 +1,14 @@
+{
+  "name": "b2cid-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker that generates authorized URLs for Backblaze B2 content",
+  "main": "final.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "DaokoTube",
+  "license": "MIT",
+  "dependencies": {
+    "wrangler": "^4.7.1"
+  }
+}

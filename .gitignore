@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Wrangler generated files
+.wrangler/
+dist/
+
+# Environment variables
+.env
+.dev.vars
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS specific
+.DS_Store
+Thumbs.db

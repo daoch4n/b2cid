@@ -1,0 +1,22 @@
+name = "b2cid"
+main = "index.js"
+compatibility_date = "2025-04-04"
+
+# Configure environment variables
+# No secrets needed - API key is passed via URL parameter
+
+[vars]
+# Default cache TTL in seconds (1 day)
+CACHE_TTL = 86400
+
+# Configure routes
+# This worker will be available at your-worker-subdomain.workers.dev
+
+# Configure custom domain
+[[routes]]
+pattern = "b2.xn--vck1b.shop"
+custom_domain = true
+
+# Configure triggers
+[triggers]
+crons = []
