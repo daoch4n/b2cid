@@ -78,19 +78,6 @@ The worker can be configured by modifying the `CONFIG` object in `index.js`:
 - `CACHE_CONTROL`: Cache-Control header for responses
 - `ALLOWED_ORIGINS`: List of origins allowed to access the worker via CORS
 
-## Integration with DaokoTube
-
-To use this worker as a provider in DaokoTube, add it to the provider configuration:
-
-```javascript
-// In app/config/constants.js
-DEFAULT_PROVIDER_TEMPLATES: {
-  // ... existing providers
-  '🇺🇸🔥  [b2]  daokotube': 'https://your-worker-subdomain.workers.dev?cid={cid}'
-}
-```
-
-The worker will be called by the application when needed, and the returned authorized URL will be used to fetch content from B2 storage.
 
 ## Security Considerations
 
